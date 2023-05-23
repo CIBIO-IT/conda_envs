@@ -29,7 +29,26 @@ echo "INFO: conda environment $ENV created and activated"
 REPOS=(-c r -c conda-forge)
 
 # Packages to install
-conda install -n "$ENV" -y "${REPOS[@]}" shellcheck
+conda install -n "$ENV" -y "${REPOS[@]}" perl
+conda install -n "$ENV" -y "${REPOS[@]}" python=3.9
+conda install -n "$ENV" -y "${REPOS[@]}" r-essentials
+conda install -n "$ENV" -y "${REPOS[@]}" r-base
+conda install -n "$ENV" -y "${REPOS[@]}" fastqc
+conda install -n "$ENV" -y "${REPOS[@]}" trimmomatic
+conda install -n "$ENV" -y "${REPOS[@]}" cutadapt
+conda install -n "$ENV" -y "${REPOS[@]}" bwa
+conda install -n "$ENV" -y "${REPOS[@]}" bowtie2
+conda install -n "$ENV" -y "${REPOS[@]}" bioconductor-deseq2
+conda install -n "$ENV" -y "${REPOS[@]}" samtools
+conda install -n "$ENV" -y "${REPOS[@]}" bcftools
+conda install -n "$ENV" -y "${REPOS[@]}" vcftools
+conda install -n "$ENV" -y "${REPOS[@]}" angsd
+conda install -n "$ENV" -y "${REPOS[@]}" fastme
+conda install -n "$ENV" -y "${REPOS[@]}" picard
+conda install -n "$ENV" -y "${REPOS[@]}" freebayes
+conda install -n "$ENV" -y "${REPOS[@]}" gatk
+conda install -n "$ENV" -y "${REPOS[@]}" lumpy-sv
+conda install -n "$ENV" -y "${REPOS[@]}" breakdancer
 # complete here
 
 
